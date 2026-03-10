@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Paintings - Artisan Gallery</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:;">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">Artisan Gallery</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">My Paintings</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <div class="gallery-header-content">
+                <h1 class="gallery-title">My Complete Paintings Collection</h1>
+                <p class="gallery-subtitle">Explore my artistic journey through original paintings, each piece crafted with passion and unique vision</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Paintings</button>
+                <button class="filter-btn" data-filter="oil">Oil Paintings</button>
+                <button class="filter-btn" data-filter="acrylic">Acrylic</button>
+                <button class="filter-btn" data-filter="watercolor">Watercolor</button>
+                <button class="filter-btn" data-filter="mixed">Mixed Media</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extended Gallery Section -->
+    <section class="extended-gallery">
+        <div class="container">
+            <div class="gallery-grid-extended">
+                <!-- Main 6 paintings from index -->
+                <div class="gallery-item" data-category="oil">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-1"></div>
+                        <div class="artwork-info">
+                            <h3>Crimson Dreams</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Oil on Canvas</p>
+                            <p class="dimensions">24" x 36"</p>
+                            <p class="year">2024</p>
+                            <span class="price">$2,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="acrylic">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-2"></div>
+                        <div class="artwork-info">
+                            <h3>Ocean Whispers</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Acrylic on Canvas</p>
+                            <p class="dimensions">30" x 40"</p>
+                            <p class="year">2024</p>
+                            <span class="price">$3,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="watercolor">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-3"></div>
+                        <div class="artwork-info">
+                            <h3>Morning Light</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Watercolor on Paper</p>
+                            <p class="dimensions">18" x 24"</p>
+                            <p class="year">2024</p>
+                            <span class="price">$1,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mixed">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-4"></div>
+                        <div class="artwork-info">
+                            <h3>Urban Symphony</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Mixed Media on Canvas</p>
+                            <p class="dimensions">36" x 48"</p>
+                            <p class="year">2024</p>
+                            <span class="price">$2,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="oil">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-5"></div>
+                        <div class="artwork-info">
+                            <h3>Midnight Garden</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Oil on Canvas</p>
+                            <p class="dimensions">32" x 44"</p>
+                            <p class="year">2024</p>
+                            <span class="price">$3,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="acrylic">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-6"></div>
+                        <div class="artwork-info">
+                            <h3>Golden Horizon</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Acrylic on Canvas</p>
+                            <p class="dimensions">28" x 36"</p>
+                            <p class="year">2024</p>
+                            <span class="price">$2,600</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional paintings that don't show on main page -->
+                <div class="gallery-item" data-category="oil">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-7"></div>
+                        <div class="artwork-info">
+                            <h3>Forest Depths</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Oil on Canvas</p>
+                            <p class="dimensions">30" x 40"</p>
+                            <p class="year">2023</p>
+                            <span class="price">$2,900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="watercolor">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-8"></div>
+                        <div class="artwork-info">
+                            <h3>Cherry Blossoms</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Watercolor on Paper</p>
+                            <p class="dimensions">16" x 20"</p>
+                            <p class="year">2023</p>
+                            <span class="price">$1,600</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="acrylic">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-9"></div>
+                        <div class="artwork-info">
+                            <h3>Electric Storm</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Acrylic on Canvas</p>
+                            <p class="dimensions">24" x 32"</p>
+                            <p class="year">2023</p>
+                            <span class="price">$2,400</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mixed">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-10"></div>
+                        <div class="artwork-info">
+                            <h3>Abstract Emotions</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Mixed Media on Canvas</p>
+                            <p class="dimensions">36" x 36"</p>
+                            <p class="year">2023</p>
+                            <span class="price">$3,100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="oil">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-11"></div>
+                        <div class="artwork-info">
+                            <h3>Mountain Reflection</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Oil on Canvas</p>
+                            <p class="dimensions">40" x 60"</p>
+                            <p class="year">2023</p>
+                            <span class="price">$4,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="watercolor">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-12"></div>
+                        <div class="artwork-info">
+                            <h3>Sunset Serenity</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Watercolor on Paper</p>
+                            <p class="dimensions">20" x 28"</p>
+                            <p class="year">2023</p>
+                            <span class="price">$1,900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="acrylic">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-13"></div>
+                        <div class="artwork-info">
+                            <h3>Neon Dreams</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Acrylic on Canvas</p>
+                            <p class="dimensions">28" x 42"</p>
+                            <p class="year">2022</p>
+                            <span class="price">$2,700</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mixed">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-14"></div>
+                        <div class="artwork-info">
+                            <h3>Cosmic Journey</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Mixed Media on Canvas</p>
+                            <p class="dimensions">48" x 60"</p>
+                            <p class="year">2022</p>
+                            <span class="price">$5,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="oil">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-15"></div>
+                        <div class="artwork-info">
+                            <h3>Ancient Wisdom</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Oil on Canvas</p>
+                            <p class="dimensions">36" x 48"</p>
+                            <p class="year">2022</p>
+                            <span class="price">$3,800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Original Paintings</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4</h3>
+                    <p>Different Mediums</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2022</h3>
+                    <p>Started Journey</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Original Work</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>My Painting Gallery</h3>
+                    <p>Original paintings created with passion and inspired by life's beautiful moments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">My Paintings</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow My Art</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 My Painting Gallery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for artwork details -->
+    <div id="artworkModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image"></div>
+                <div class="modal-info">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-artist"></p>
+                    <p class="modal-medium"></p>
+                    <p class="modal-dimensions"></p>
+                    <p class="modal-year"></p>
+                    <p class="modal-description"></p>
+                    <p class="modal-price"></p>
+                    <button class="inquire-btn">Inquire About Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artistic SVG Background Accents -->
+    <div class="art-bg">
+        <svg class="brushstroke" width="320" height="120" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10,60 Q80,10 160,60 T310,60" stroke="#ff6b6b" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.18">
+                <animate attributeName="opacity" values="0.18;0.28;0.18" dur="3s" repeatCount="indefinite" />
+            </path>
+        </svg>
+        <svg class="splatter" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="18" fill="#ff6b6b" opacity="0.12">
+                <animate attributeName="r" values="18;22;18" dur="2.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="60" cy="20" r="6" fill="#ff6b6b" opacity="0.18">
+                <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery-page.js"></script>
+</body>
+</html>

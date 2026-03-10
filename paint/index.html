@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Gallery - Contemporary Art Collection</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:;">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">Artisan Gallery</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="gallery.html">My Paintings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Artistic SVG Background Accents -->
+    <div class="art-bg">
+        <svg class="brushstroke" width="320" height="120" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10,60 Q80,10 160,60 T310,60" stroke="#ff6b6b" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.18">
+                <animate attributeName="opacity" values="0.18;0.28;0.18" dur="3s" repeatCount="indefinite" />
+            </path>
+        </svg>
+        <svg class="splatter" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="18" fill="#ff6b6b" opacity="0.12">
+                <animate attributeName="r" values="18;22;18" dur="2.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="60" cy="20" r="6" fill="#ff6b6b" opacity="0.18">
+                <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Original Paintings Collection</h1>
+            <p class="hero-subtitle">Explore my unique collection of hand-painted artworks, each piece telling its own story</p>
+            <button class="cta-button" id="viewPaintingsBtn">View My Paintings</button>
+        </div>
+        <div class="hero-image">
+            <div class="hero-artwork"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">My Paintings</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-1"></div>
+                        <div class="artwork-info">
+                            <h3>Your First Painting</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Oil on Canvas</p>
+                            <span class="price">$2,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-2"></div>
+                        <div class="artwork-info">
+                            <h3>Your Second Painting</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Acrylic on Canvas</p>
+                            <span class="price">$3,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-3"></div>
+                        <div class="artwork-info">
+                            <h3>Your Third Painting</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Watercolor on Paper</p>
+                            <span class="price">$1,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-4"></div>
+                        <div class="artwork-info">
+                            <h3>Your Fourth Painting</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Mixed Media on Canvas</p>
+                            <span class="price">$2,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-5"></div>
+                        <div class="artwork-info">
+                            <h3>Your Fifth Painting</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Oil on Canvas</p>
+                            <span class="price">$3,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-card">
+                        <div class="artwork-image paintings-6"></div>
+                        <div class="artwork-info">
+                            <h3>Your Sixth Painting</h3>
+                            <p class="artist">Your Name</p>
+                            <p class="medium">Acrylic on Canvas</p>
+                            <span class="price">$2,600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Gallery Information</h3>
+                    <div class="contact-item">
+                        <h4>Address</h4>
+                        <p>Art District<br>Negros Occidental, Bacolod City 6100</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Hours</h4>
+                        <p>Tuesday - Sunday: 10AM - 6PM<br>Closed Mondays</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Contact</h4>
+                        <p>Phone: (555) 123-4567<br>Email: info@artisangallery.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form action="#" method="post" novalidate>
+                        <input type="text" name="name" placeholder="Your Name" required maxlength="100" pattern="[A-Za-z\s]+" title="Please enter a valid name">
+                        <input type="email" name="email" placeholder="Your Email" required maxlength="100" title="Please enter a valid email address">
+                        <textarea name="message" placeholder="Your Message" rows="5" required maxlength="1000" title="Please enter your message"></textarea>
+                        <button type="submit">Send Message</button>
+                        <small style="color: #888; margin-top: 10px; display: block;">Note: This form is currently for display purposes. To enable email functionality, you'll need to connect it to a backend service.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>My Painting Gallery</h3>
+                    <p>Original paintings created with passion and inspired by life's beautiful moments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#gallery">My Paintings</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow My Art</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 My Painting Gallery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for artwork details -->
+    <div id="artworkModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image"></div>
+                <div class="modal-info">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-artist"></p>
+                    <p class="modal-medium"></p>
+                    <p class="modal-description"></p>
+                    <p class="modal-price"></p>
+                    <button class="inquire-btn">Inquire About Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Security Popup -->
+    <div id="securityPopup" class="security-popup">
+        <div class="security-popup-content">
+            <span class="security-popup-icon" id="popupIcon">⚠️</span>
+            <h3 id="popupTitle">Security Notice</h3>
+            <p id="popupMessage">Please check your input and try again.</p>
+            <button class="security-popup-close" id="securityPopupCloseBtn">OK</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
